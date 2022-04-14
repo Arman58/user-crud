@@ -60,7 +60,6 @@ const Users = ({users}) => {
         {
             title: "Details",
             render: ((record, user) => {
-                console.log(record, "Record")
                 return (
                     <div className="flex">
                         <EditOutlined onClick={() => openEditModal(record.id)}/>
