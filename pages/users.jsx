@@ -30,37 +30,36 @@ const Users = ({users}) => {
             dataIndex: 'name',
             key: 'name',
             render: (record, user) => <Link href={`/users/${user.id}`}><a>{record}</a></Link>,
-            responsive: ["xs", "sm", "md", "lg", "xl", "2xl"]
+            responsive: ["xs", "sm", "md", "lg", "xl", "2xl"],
 
         },
         {
             title: 'Username',
             dataIndex: 'username',
             key: 'username',
-            responsive: ["xs", "sm", "md", "lg", "xl", "2xl"]
+            responsive: [ "md", "lg", "xl", "2xl"],
         },
         {
             title: 'Email',
             dataIndex: 'email',
             key: 'email',
-            responsive: ["xs", "sm", "md", "lg", "xl", "2xl"]
+            responsive: [ "sm","md", "lg", "xl", "2xl"]
         },
         {
             title: 'Address',
             dataIndex: 'website',
             key: 'address',
-            responsive: ["xs", "sm", "md", "lg", "xl", "2xl"]
+            responsive: ["lg", "xl", "2xl"]
         },
         {
             title: 'Phone',
             dataIndex: 'phone',
             key: 'phone',
-            responsive: ["xs", "sm", "md", "lg", "xl", "2xl"]
+            responsive: [  "lg", "xl", "2xl"]
         },
         {
             title: "Details",
             render: ((record, user) => {
-                console.log(record, "Record")
                 return (
                     <div className="flex">
                         <EditOutlined onClick={() => openEditModal(record.id)}/>
